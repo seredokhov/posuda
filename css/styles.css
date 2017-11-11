@@ -155,7 +155,7 @@ header .info_block {
 .phone_num > a.callback:hover {
 	border: none;
 }
-.cart_block .icon {
+.icon_cart{
 	display: inline-block;
 	vertical-align: middle;
 	width: 32px;
@@ -164,7 +164,7 @@ header .info_block {
 	background: url('../images/sprite.png');
 	background-position: -38px -2px;
 }
-.cart_block .icon>span {
+.icon_cart>span {
 	display: inline-block;
 	vertical-align: middle;
 	background: #f1f2f4;
@@ -177,12 +177,15 @@ header .info_block {
 	position: relative;
 	top: 10px;
 }
-.cart_block a.cart {
+.cart {
 	text-decoration: none;
 	color: #424a55;
 	display: block;
 }
-.cart_block .cart .txt {
+.cart:hover {
+	text-decoration: none;
+}
+.cart .txt {
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
@@ -214,19 +217,104 @@ ul.header_nav a {
 	line-height: 50px;
 	transition: all .1s linear;
 }
-ul.header_nav > li:first-child a {
+ul.header_nav > li.active a {
 	background: #424a55;
 }
 ul.header_nav >li a:hover {
 	background: #ff0131;
 }
-ul.header_nav .user {
+ul.header_nav span.round {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	background: #ffffff;
+	color: #000000;
+	margin-left: 10px;
+	position: relative;
+	top: -1px;
+}
+ul.header_nav .user,
+nav.container .user {
 	display: inline-block;
 	vertical-align: middle;
 	width: 25px;
 	height: 24px;
 	background: url(../images/sprite.png);
 	background-position: -390px -8px;
+}
+nav.container .enter_btn,
+nav.container .menu_toggle{
+	float: right;
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 27px 0 26px 5px;
+}
+nav.container .menu_toggle {
+	background-color: #21252b;
+	line-height: 52px;
+}
+nav.container .menu_toggle > div {
+	margin: 0;
+}
+nav.container .enter_btn:hover,
+nav.container .menu_toggle:hover {
+	background: #ff0131;
+}
+nav.container .enter_btn:active,
+nav.container .menu_toggle:active,
+button.close_menu:active {
+	-webkit-box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+}
+header a.logo_small {
+	margin: 10px 0;
+}
+button.close_menu {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background: #ff0131;
+	margin-bottom: 10px;
+}
+button.close_menu::before {
+	content: "\2716";
+	display: inline-block;
+	color: #ffffff;
+	font-size: 16px;
+}
+.mobile_search {
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 210px;
+	margin: 10px 0 10px 20px;
+}
+.mobile_search input {
+	width: 100%;
+	display: block;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 45px;
+}
+.mobile_search button {
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url('../images/search.png') no-repeat 10px 10px red;
+
 }
 
 /* Боковая колонка*/
@@ -283,7 +371,7 @@ aside .delivery {
 ul.cat_list {
 	padding: 0;
 	margin: 0;
-	list-style: 0;
+	list-style: none;
 }
 ul.cat_list > li {
 	display: block;
@@ -697,7 +785,7 @@ footer .subscribe_btn:active {
 	word-spacing: 7px;
 }
 a.logo_small {
-	display: inline-block;
+	float: left;
 	vertical-align: middle;
 	width: 83px;
 	height: 83px;
@@ -710,9 +798,9 @@ footer ul.links_ul {
 }
 ul.links_ul li {
 	display: block;
+	padding-bottom: 3px;
 }
 ul.links_ul a {
-	display: block;
 	color: #ffffff;
 	font-size: 14px;
 	text-decoration: none;
@@ -720,12 +808,67 @@ ul.links_ul a {
 ul.links_ul a:hover {
 	text-decoration: underline;
 }
+footer .phone_num .call {
+	color: #ffffff;
+}
+footer .adress,
+footer .email {
+	font-size: 14px;
+	color: #878787;
+	line-height: 24px;
+}
+footer .email > span {
+	margin-left: 10px;
+}
+footer > .container {
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+footer .copyright_block {
+	background: #101010;
+	min-height: 70px;
+	line-height: 70px;
 
-
-
-
-
-
+}
+footer .copyright_block a,
+footer a.conf {
+	color: #ff0131;
+	text-decoration: none;
+	border-bottom: 1px solid #ff0131;
+}
+footer .copyright_block a {
+	margin: 0 5px;
+}
+footer .copyright_block a:hover,
+footer a.conf:hover {
+	border-color: transparent;
+}
+.overlay {
+	display: none;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.8);
+}
+footer .footer_btn {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	background: #21252b;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+footer .footer_btn:active {
+	-webkit-box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+}
 
 
 /*  Слайдер (банеры)*/
@@ -733,7 +876,6 @@ ul.links_ul a:hover {
 	position: relative;
 	border-radius: 15px;
 	overflow: hidden;
-
 }
 .owl-controls {
 	position: absolute;
@@ -809,9 +951,89 @@ ul.links_ul a:hover {
 
 
 /* Медиазапросы */
+@media (max-width: 1200px) {
+	ul.cat_list a {
+		height: 45px;
+		line-height: 45px;
+	}
+}
+@media (max-width: 991px) {
+	aside .catalog,
+	aside .delivery {
+		margin: 0 0 20px 0;
+	}
+	ul.header_nav {
+		width: 0;
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: #21252b;
+		transition: width .3s linear;
+		overflow: hidden;
+	}
+	ul.header_nav.open {
+		width: 250px;
+	}
+	ul.header_nav > li {
+		float: none;
+	}
+	ul.header_nav a {
+		text-align: left;
+		padding-left: 30px;
+
+	}
+	ul.cat_list {
+		display: none;
+	}
+	.catalog .aside_header {
+		cursor: pointer;
+	}
+	.aside_footer {
+		height: 10px;
+	}
+	footer .subscribe_block {
+		line-height: normal;
+	}
+	.subscribe_block label {
+		margin: 20px 0;
+		display: block;
+	}
+}
+@media (max-width: 768px) {
+	footer ul.links_ul {
+		text-align: center;
+		display: none;
+	}
+}
+
+
 @media (max-width: 790px) {
 	.customNavigation a.prev,
 	.customNavigation a.next {
 		transform: translate(0, -50%);
 	}
+}
+@media (max-width: 650px) {
+	.white_block .label_delivery,
+	.white_block .label_goods {
+		display: block;
+		float: none;
+		margin: 20px auto;
+		width: 260px;
+	}
+	footer .copyright_block {
+		line-height: normal;
+	}
+	footer .copyright_block {
+		padding: 20px 0;
+	}
+}
+@media (max-width: 380px) {
+	.brand_list > div {
+		float: none;
+		width: 100%;
+	}
+
 }

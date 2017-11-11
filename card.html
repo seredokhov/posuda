@@ -35,12 +35,12 @@
 </head>
 <body>
 	<header>
-		<div class="container">
+		<div class="container hidden-sm hidden-xs">
 			<div class="row flex">
 				<div class="col-md-2">
 					<a href="#" class="logo"><img src="images/logo.png" alt="logo" class="img-responsive" ></a>
 				</div>
-				<div class="col-lg-15 col-lg-offset-1 col-md-16 flex">
+				<div class="col-lg-15 col-md-16 col-lg-offset-1 flex">
 					<div class="search_block">
 						<div class="search">
 							<input type="text" placeholder="Поиск">
@@ -52,7 +52,7 @@
 						</div>
 					</div>
 					<div class="info_block">
-						<div class="contacts"><span>Контакты</span></div>
+						<div class="contacts"><a href="#">Контакты</a></div>
 						<div class="work_time">пн-пт с 10:00 до 19:00</div>
 					</div>
 					<div class="cart_block">
@@ -60,18 +60,24 @@
 							<a href="#" class="call">+7 (495) 642 23 73</a>
 							<a href="#" class="callback">Заказать обратный звонок</a>
 						</div>
-						<div class="cart">
-							<div class="icon"><span class="count">0</span></div>
+						<a href="#" class="cart">
+							<div class="icon_cart"><span class="count">0</span></div>
 							<div class="txt">В корзине <span class="count">0</span></div>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
 			<nav class="container">
+				<a href="#" class="logo_small visible-sm visible-xs"></a>
 				<ul class="header_nav row">
-					<li class="col-md-3"><a href="#">Подарки</a></li>
+					<!--  Пункт меню видимый на маленьких экранах (кнопка закрыть меню) -->
+					<li class="visible-sm visible-xs" >
+						<button class="close_menu"></button>
+					</li>
+					<!--  Пункты меню видимые всех экранах  -->
+					<li class="col-md-3 active"><a href="#">Подарки</a></li>
 					<li class="col-md-2"><a href="#">Готовка</a></li>
 					<li class="col-md-2"><a href="#">Сервировка</a></li>
 					<li class="col-md-2"><a href="#">Ножи</a></li>
@@ -79,8 +85,25 @@
 					<li class="col-md-2"><a href="#">Бар</a></li>
 					<li class="col-md-2"><a href="#">Техника</a></li>
 					<li class="col-md-2"><a href="#">Распродажа</a></li>
-					<li class="col-md-1"><a href="#"><span class="user"></span></a></li>
+					<!--  Пункт меню видимый на больших экранах (войти) -->
+					<li class="col-md-1 hidden-sm hidden-xs"><a href="#"><span class="user"></span></a></li>
+					<!--  Пункты меню видимые на маленьких экранах (поиск и корзина) -->
+					<li class="visible-sm visible-xs"><a href="#">Корзина<span class="round">0</span></a></li>
+					<li class="visible-sm visible-xs">
+						<div class="mobile_search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"></button>
+						</div>
+					</li>
 				</ul>
+				<!--  Пункт меню видимый на маленьких экранах (войти) -->
+				<a href="#" class="visible-sm visible-xs enter_btn"><span class="user"></span></a>
+				<!--  Кнопка видимая на маленких экранах (открыть меню) -->
+				<button type="button" class="visible-sm visible-xs menu_toggle" >
+					<div class="hamb">
+						<span></span>
+					</div>
+				</button>
 			</nav>
 		</div>
 	</header>
@@ -147,16 +170,77 @@
 				</div>
 			</aside>
 			<div class="col-lg-13">
-				<div class="carousel">
-					<div id="owl-demo" class="owl-carousel owl-theme">
-						<div class="item"><img src="images/baner.png" alt="The Last of us"></div>
-						<div class="item"><img src="images/baner.png" alt="The Last of us"></div>
-						<div class="item"><img src="images/baner.png" alt="The Last of us"></div>
-					</div>
-				</div>
+				
 			</div>
 		</section>
 	</main>
+
+
+
+
+
+
+	<footer>
+		<div class="subscribe_block">
+			<div class="container">
+				<form class="row">
+					<div class="col-md-7 col-sm-9">
+						<label for="subscribe">Подписка на новости и дополнительные скидки</label>
+					</div>
+					<div class="col-sm-6">
+						<input type="text" id="subscribe" class="subscribe_input" placeholder="Ваш email:">
+					</div>
+					<div class="col-sm-3">
+						<input type="submit" class="subscribe_btn" value="Подписаться">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-4 clearfix hidden-xs">
+					<a href="#" class="logo_small"></a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="visible-xs"><button type="button" class="footer_btn">Информация</button></li></div>
+					<ul class="links_ul slide_ul">
+						<li><a href="#">О проекте</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Обмен / Возврат</a></li>
+						<li><a href="#">Дизайнерам</a></li>
+						<li><a href="#">Корпоративным клиентам</a></li>
+						<li><a href="#">Скидки</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-7 visible-lg visible-md">
+					<ul class="links_ul">
+						<li><a href="#">Готовка</a></li>
+						<li><a href="#">Сервировка</a></li>
+						<li><a href="#">Ножи</a></li>
+						<li><a href="#">Кофе / Чай</a></li>
+						<li><a href="#">Бар</a></li>
+						<li><a href="#">Техника</a></li>
+						<li><a href="#">Аксессуары</a></li>
+						<li><a href="#">Бренды</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-sm-7">
+					<div class="phone_num">
+						<a href="#" class="call">+7 (495) 642 23 73</a>
+						<a href="#" class="callback">Заказать обратный звонок</a>
+					</div>
+					<div class="adress">Москва, 3-й Крутицкий переулок 	дом 11 (ст. м. Пролетарская)</div>
+					<div class="email">E-mail:<span>info@theposuda.ru</span></div>
+					<a href="#" class="conf">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+		<div class="copyright_block">
+			<div class="container">Интернет-магазин посуды<a href="#">THE POSUDA</a>© 2017. Все права защищены.</div>
+		</div>
+	</footer>
 
 
 
