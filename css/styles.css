@@ -686,15 +686,40 @@ footer .subscribe_btn {
 	text-align: center;
 	margin: 15px 0;
 }
+footer .subscribe_btn:active {
+	-webkit-box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 24px 0px rgba(0,0,0,0.5);
+}
 .subscribe_block label {
 	margin: 0;
 	padding: 0;
 	word-spacing: 7px;
 }
-
-
-
-
+a.logo_small {
+	display: inline-block;
+	vertical-align: middle;
+	width: 83px;
+	height: 83px;
+	background: url('../images/logoSM.png') no-repeat 1px 2px;
+}
+footer ul.links_ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.links_ul li {
+	display: block;
+}
+ul.links_ul a {
+	display: block;
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+}
+ul.links_ul a:hover {
+	text-decoration: underline;
+}
 
 
 
