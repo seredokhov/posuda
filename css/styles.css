@@ -14,6 +14,11 @@
 /*============================================ 
 	Основные стили
 ============================================*/
+input,
+button {
+	border: none;
+	outline: none;
+}
 body{
 	font-family: 'HelveticaNeueCyr Roman', sans-serif;
 	line-height: 1.5;
@@ -105,8 +110,10 @@ header .info_block {
 .info_block .contacts {
 	margin-right: 35px;
 }
-.info_block .contacts span {
+.info_block .contacts a {
 	border-bottom: 1px solid #21252b;
+	color: #424a55;
+	text-decoration: none;
 }
 .info_block .contacts::before {
 	content: "";
@@ -169,6 +176,11 @@ header .info_block {
 	border-radius: 50%;
 	position: relative;
 	top: 10px;
+}
+.cart_block a.cart {
+	text-decoration: none;
+	color: #424a55;
+	display: block;
 }
 .cart_block .cart .txt {
 	display: inline-block;
@@ -407,7 +419,7 @@ ul.delivery_change span.time {
 
 
 /*  Блок main  */
-main > section {
+section {
 	margin-bottom: 35px;
 }
 .title {
@@ -562,6 +574,131 @@ main > section {
 .brand_list a.Bialetti {
 	background: url('../images/Bialetti.png') center no-repeat;
 }
+
+
+.white_block {
+	background: #ffffff;
+	padding-top: 45px;
+}
+.white_block p {
+	font-size: 16px;
+	color: #6b7079;
+	margin: 0 0 20px 0;
+	line-height: 1.45;
+}
+.white_block .advice_img {
+	margin:  0 auto 20px auto;
+}
+.white_block .label_goods,
+.white_block .label_delivery {
+	width: 280px;
+	height: 85px;
+	border-radius: 8px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.5);
+	box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.5);
+}
+.white_block .label_goods {
+	float: left;
+}
+.white_block .label_delivery {
+	float: right;
+}
+.label_goods .img_block,
+.label_delivery .img_block {
+	float: left;
+	width: 40%;
+	height: 85px;
+	background: url('../images/sprite2.png') no-repeat -17px 10px;
+}
+.label_delivery .img_block {
+	background-position: -17px -52px;
+}
+.label_goods span,
+.label_delivery span {
+	display: block;
+	float: left;
+	width: 60%;
+	height: 85px;
+	padding: 30px 5px 10px 5px;
+	color: #21252b;
+	font-weight: bold;
+	font-size: 16px;
+}
+.label_delivery span {
+	padding-top: 22px;
+}
+/* новости */
+.news img {
+	margin: 0 auto;
+}
+.news a.new {
+	display: block;
+	margin-bottom: 10px;
+	color: #ff0000;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.news a.new:hover {
+	text-decoration: none;
+}
+.news a.new span {
+	display: block;
+	text-align: center;
+}
+a.new .img_block {
+	margin-bottom: 10px;
+}
+
+/* футер */
+footer {
+	background: #292929;
+	color: #ffffff;
+}
+footer .subscribe_block {
+	background: #474747;
+	font-size: 16px;
+	font-weight: bold;
+	min-height: 70px;
+	line-height: 70px;
+}
+footer .subscribe_input {
+	height: 40px;
+	width: 100%;
+	border-radius: 10px;
+	padding-left: 20px;
+	margin: 15px 0;
+	font-weight: normal;
+	color: #21252b;
+}
+footer .subscribe_btn {
+	display: block;
+	color: #ffffff;
+	background: #ff0000;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	border-radius: 10px;
+	text-align: center;
+	margin: 15px 0;
+}
+.subscribe_block label {
+	margin: 0;
+	padding: 0;
+	word-spacing: 7px;
+}
+
+
+
+
+
+
+
+
 
 
 
