@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posuda</title>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Jquery UI-->
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
+	<!-- Owl -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.transitions.css">
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i">
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<div class="container hidden-sm hidden-xs">
+			<div class="row flex">
+				<div class="col-md-2">
+					<a href="#" class="logo"><img src="images/logo.png" alt="logo" class="img-responsive" ></a>
+				</div>
+				<div class="col-lg-15 col-md-16 col-lg-offset-1 flex">
+					<div class="search_block">
+						<div class="search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"></button>
+						</div>
+						<div class="example">
+							<span>Например:</span>
+							<a href="#">Arcos</a>
+						</div>
+					</div>
+					<div class="info_block">
+						<div class="contacts"><a href="#">Контакты</a></div>
+						<div class="work_time">пн-пт с 10:00 до 19:00</div>
+					</div>
+					<div class="cart_block">
+						<div class="phone_num">
+							<a href="#" class="call">+7 (495) 642 23 73</a>
+							<a href="#" class="callback">Заказать обратный звонок</a>
+						</div>
+						<a href="#" class="cart">
+							<div class="icon_cart"><span class="count">0</span></div>
+							<div class="txt">В корзине <span class="count">0</span></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<nav class="container">
+				<a href="#" class="logo_small visible-sm visible-xs"></a>
+				<ul class="header_nav row">
+					<!--  Пункт меню видимый на маленьких экранах (кнопка закрыть меню) -->
+					<li class="visible-sm visible-xs" >
+						<button class="close_menu"></button>
+					</li>
+					<!--  Пункты меню видимые всех экранах  -->
+					<li class="col-md-3 active"><a href="#">Подарки</a></li>
+					<li class="col-md-2"><a href="#">Готовка</a></li>
+					<li class="col-md-2"><a href="#">Сервировка</a></li>
+					<li class="col-md-2"><a href="#">Ножи</a></li>
+					<li class="col-md-2"><a href="#">Кофе/Чай</a></li>
+					<li class="col-md-2"><a href="#">Бар</a></li>
+					<li class="col-md-2"><a href="#">Техника</a></li>
+					<li class="col-md-2"><a href="#">Распродажа</a></li>
+					<!--  Пункт меню видимый на больших экранах (войти) -->
+					<li class="col-md-1 hidden-sm hidden-xs"><a href="#"><span class="user"></span></a></li>
+					<!--  Пункты меню видимые на маленьких экранах (поиск и корзина) -->
+					<li class="visible-sm visible-xs"><a href="#">Корзина<span class="round">0</span></a></li>
+					<li class="visible-sm visible-xs">
+						<div class="mobile_search">
+							<input type="text" placeholder="Поиск">
+							<button type="submit"></button>
+						</div>
+					</li>
+				</ul>
+				<!--  Пункт меню видимый на маленьких экранах (войти) -->
+				<a href="#" class="visible-sm visible-xs enter_btn"><span class="user"></span></a>
+				<!--  Кнопка видимая на маленких экранах (открыть меню) -->
+				<button type="button" class="visible-sm visible-xs menu_toggle" >
+					<div class="hamb">
+						<span></span>
+					</div>
+				</button>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		<section class="row">
+			<aside class="col-md-5">
+				<div class="catalog">
+					<div class="aside_header">
+						<div class="hamb">
+							<span></span>
+						</div>
+						Каталог товаров
+					</div>
+					<ul class="cat_list">
+						<li>
+							<a href="#" class="cook">
+								<span>Готовка</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="laying">
+								<span>Сервировка</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="knife">
+								<span>Ножи</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="drink">
+								<span>Кофе<span class="separator">/</span>Чай</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="cafe">
+								<span>Бар</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="accessory">
+								<span>Аксессуары</span>
+							</a>
+						</li>
+					</ul>
+					<div class="aside_footer"></div>
+				</div>
+			</aside>
+			<div class="col-md-13">
+				<div class="h1_block">
+					<h1>Сковороды / Грили / Тажины</h1>
+					<div class="breadcrumbs">
+						<a href="#">Главная</a>
+						<span class="sep"></span>
+						<a href="#">Готовка</a>
+						<span class="sep"></span>
+						<span class="nolink">Сковороды / Грили / Тажины</span>
+					</div>
+				</div>
+				<div class="baner">
+					<img src="images/baner2.jpg" alt="baner" class="img-responsive">
+				</div>
+			</div>
+		</section>
+		<section class="cat_block">
+			<div class="mobile_cat">
+				<button>Выбрать категорию</button>
+			</div>
+			<ul>
+				<li class="active"><a href="#">Все</a></li>
+				<li><a href="#">Наборы посуды</a></li>
+				<li><a href="#">Кастрюли</a></li>
+				<li><a href="#">Воки</a></li>
+				<li><a href="#">Сковороды / Грили / Тажины</a></li>
+				<li><a href="#">Крышки</a></li>
+				<li><a href="#">Наборы посуды</a></li>
+				<li><a href="#">Кастрюли</a></li>
+				<li><a href="#">Воки</a></li>
+				<li><a href="#">Сковороды / Грили / Тажины</a></li>
+				<li><a href="#">Крышки</a></li>
+			</ul>
+		</section>
+	</div>
+	<div class="filter_block">
+		<div class="container">
+
+			<div class="range">
+				<div class="cost_inputs clearfix">
+					<div class="text">Цена:</div>
+					<div class="input_group">
+						<label for="minCost"><span>Цена:</span> от</label>
+						<input class="form-control" name="minCost" id="minCost">
+					</div>
+					<div class="input_group">
+						<label for="maxCost">до</label>
+						<input class="form-control" name="maxCost" id="maxCost">
+					</div>
+				</div>
+				<div id="slider-range" class="slider-range" ></div>
+				<div class="dop_filters">
+					<a href="#">Дополнительные фильтры</a>
+				</div>
+			</div>
+			<div class="select">
+				<span class="panel">Сортировать</span>
+				<ul class="drop_select">
+					<li>Пункт 1</li>
+					<li>Пункт 2</li>
+					<li>Пункт 3</li>
+					<li>Пункт 4</li>
+					<li>Пункт 5</li>
+				</ul>
+			</div>
+
+			<div class="select">
+				<span class="panel">Сортировать</span>
+				<ul class="drop_select">
+					<li>Пункт 1</li>
+					<li>Пункт 2</li>
+					<li>Пункт 3</li>
+					<li>Пункт 4</li>
+					<li>Пункт 5</li>
+				</ul>
+			</div>
+
+			<div class="select">
+				<span class="panel">Сортировать</span>
+				<ul class="drop_select">
+					<li>Пункт 1</li>
+					<li>Пункт 2</li>
+					<li>Пункт 3</li>
+					<li>Пункт 4</li>
+					<li>Пункт 5</li>
+				</ul>
+			</div>
+
+			<div class="select">
+				<span class="panel">Сортировать</span>
+				<ul class="drop_select">
+					<li>Пункт 1</li>
+					<li>Пункт 2</li>
+					<li>Пункт 3</li>
+					<li>Пункт 4</li>
+					<li>Пункт 5</li>
+				</ul>
+			</div>
+
+			<div class="select">
+				<span class="panel">Сортировать</span>
+				<ul class="drop_select">
+					<li>Пункт 1</li>
+					<li>Пункт 2</li>
+					<li>Пункт 3</li>
+					<li>Пункт 4</li>
+					<li>Пункт 5</li>
+				</ul>
+			</div>
+
+			<div class="select">
+				<span class="panel">Сортировать</span>
+				<ul class="drop_select">
+					<li>Пункт 1</li>
+					<li>Пункт 2</li>
+					<li>Пункт 3</li>
+					<li>Пункт 4</li>
+					<li>Пункт 5</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="item_block">
+			<div class="item_1">
+				<a href="#">
+					<div class="img_block">
+						<img src="images/item.png" alt="item" class="img-responsive">
+					</div>
+					<span class="item_name">Westmark (Германия) Ножницы хозяйственные длина 210 мм</span>
+					<div class="cost_block">
+						<span class="cost">450 р.</span>
+					</div>
+				</a>
+				<div class="by_one_click">
+					<a href="#">Купить в 1 клик</a>
+				</div>
+				<div class="action new"></div>
+			</div>
+			<div class="item_1">
+				<a href="#">
+					<div class="img_block">
+						<img src="images/item.png" alt="item" class="img-responsive">
+					</div>
+					<span class="item_name">Westmark (Германия) Ножницы хозяйственные длина 210 мм</span>
+					<div class="cost_block">
+						<span class="cost">450 р.</span>
+					</div>
+				</a>
+				<div class="by_one_click">
+					<a href="#">Купить в 1 клик</a>
+				</div>
+				<div class="action hit"></div>
+			</div>
+			<div class="item_1">
+				<a href="#">
+					<div class="img_block">
+						<img src="images/item.png" alt="item" class="img-responsive">
+					</div>
+					<span class="item_name">Westmark (Германия) Ножницы хозяйственные длина 210 мм</span>
+					<div class="cost_block">
+						<span class="cost">450 р.</span>
+					</div>
+				</a>
+				<div class="by_one_click">
+					<a href="#">Купить в 1 клик</a>
+				</div>
+			</div>
+			<div class="item_1">
+				<a href="#">
+					<div class="img_block">
+						<img src="images/item.png" alt="item" class="img-responsive">
+					</div>
+					<span class="item_name">Westmark (Германия) Ножницы хозяйственные длина 210 мм</span>
+					<div class="cost_block">
+						<span class="cost">450 р.</span>
+					</div>
+				</a>
+				<div class="by_one_click">
+					<a href="#">Купить в 1 клик</a>
+				</div>
+				<div class="action discount">15</div>
+			</div>
+		</div>
+		<div class="item_block">
+			<div class="item_1">
+				<a href="#">
+					<div class="img_block">
+						<img src="images/item.png" alt="item" class="img-responsive">
+					</div>
+					<span class="item_name">Westmark (Германия) Ножницы хозяйственные длина 210 мм</span>
+					<div class="cost_block">
+						<span class="cost">450 р.</span>
+					</div>
+				</a>
+				<div class="by_one_click">
+					<a href="#">Купить в 1 клик</a>
+				</div>
+				<div class="action new"></div>
+			</div>
+			<div class="item_1">
+				<a href="#">
+					<div class="img_block">
+						<img src="images/item.png" alt="item" class="img-responsive">
+					</div>
+					<span class="item_name">Westmark (Германия) Ножницы хозяйственные длина 210 мм</span>
+					<div class="cost_block">
+						<span class="cost">450 р.</span>
+					</div>
+				</a>
+				<div class="by_one_click">
+					<a href="#">Купить в 1 клик</a>
+				</div>
+				<div class="action hit"></div>
+			</div>
+			<div class="item_1">
+				<a href="#">
+					<div class="img_block">
+						<img src="images/item.png" alt="item" class="img-responsive">
+					</div>
+					<span class="item_name">Westmark (Германия) Ножницы хозяйственные длина 210 мм</span>
+					<div class="cost_block">
+						<span class="cost">450 р.</span>
+					</div>
+				</a>
+				<div class="by_one_click">
+					<a href="#">Купить в 1 клик</a>
+				</div>
+			</div>
+			<div class="item_1">
+				<a href="#">
+					<div class="img_block">
+						<img src="images/item.png" alt="item" class="img-responsive">
+					</div>
+					<span class="item_name">Westmark (Германия) Ножницы хозяйственные длина 210 мм</span>
+					<div class="cost_block">
+						<span class="cost">450 р.</span>
+					</div>
+				</a>
+				<div class="by_one_click">
+					<a href="#">Купить в 1 клик</a>
+				</div>
+				<div class="action discount">15</div>
+			</div>
+		</div>
+		<div class="title">Хиты продаж</div>
+		<p class="hits">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+	</div>
+	<footer>
+		<div class="subscribe_block">
+			<div class="container">
+				<form class="row">
+					<div class="col-md-7 col-sm-9">
+						<label for="subscribe">Подписка на новости и дополнительные скидки</label>
+					</div>
+					<div class="col-sm-6">
+						<input type="text" id="subscribe" class="subscribe_input" placeholder="Ваш email:">
+					</div>
+					<div class="col-sm-3">
+						<input type="submit" class="subscribe_btn" value="Подписаться">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-4 clearfix hidden-xs">
+					<a href="#" class="logo_small"></a>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="visible-xs"><button type="button" class="footer_btn">Информация</button></li></div>
+					<ul class="links_ul slide_ul">
+						<li><a href="#">О проекте</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Обмен / Возврат</a></li>
+						<li><a href="#">Дизайнерам</a></li>
+						<li><a href="#">Корпоративным клиентам</a></li>
+						<li><a href="#">Скидки</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-7 visible-lg visible-md">
+					<ul class="links_ul">
+						<li><a href="#">Готовка</a></li>
+						<li><a href="#">Сервировка</a></li>
+						<li><a href="#">Ножи</a></li>
+						<li><a href="#">Кофе / Чай</a></li>
+						<li><a href="#">Бар</a></li>
+						<li><a href="#">Техника</a></li>
+						<li><a href="#">Аксессуары</a></li>
+						<li><a href="#">Бренды</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-sm-7">
+					<div class="phone_num">
+						<a href="#" class="call">+7 (495) 642 23 73</a>
+						<a href="#" class="callback">Заказать обратный звонок</a>
+					</div>
+					<div class="adress">Москва, 3-й Крутицкий переулок 	дом 11 (ст. м. Пролетарская)</div>
+					<div class="email">E-mail:<span>info@theposuda.ru</span></div>
+					<a href="#" class="conf">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+		<div class="copyright_block">
+			<div class="container">Интернет-магазин посуды<a href="#">THE POSUDA</a>© 2017. Все права защищены.</div>
+		</div>
+	</footer>
+	<div class="overlay"></div>
+
+
+
+
+	<!-- Комментарий для следующих блоков
+	================================================== -->
+	
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
