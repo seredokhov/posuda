@@ -204,3 +204,130 @@ $(function(){
 });
 
 }
+
+
+/*   Галлерея  */
+$(function() {
+	var largeImg = $('.large_photo').find('img');
+	var smallImg = $('.previews .preview img');
+	var largePrev = $('.previews_block').find('.prev');
+	var largeNext = $('.previews_block').find('.next');
+	var images = [];
+	var i = 0
+	smallImg.each(function(){
+		images.push($(this));
+	})
+	
+	largeNext.click(function(){
+		images[i].parent().removeClass('changed');
+		i++;
+		if(i > images.length- 1) {
+			i=0;
+		}
+		images[i].parent().addClass('changed');
+		var src = images[i].attr('src');
+		largeImg.fadeOut(100, function(){
+			largeImg.attr('src', src)
+		});
+		largeImg.fadeIn(100);
+	})
+	largePrev.click(function(){
+		images[i].parent().removeClass('changed');
+		i--;
+		if(i < 0) {
+			i = images.length- 1;
+		}
+		images[i].parent().addClass('changed');
+		var src = images[i].attr('src');
+		largeImg.fadeOut(100, function(){
+			largeImg.attr('src', src)
+		});
+		largeImg.fadeIn(100);
+
+	})
+	
+	smallImg.click(function() {
+		smallImg.parent().removeClass('changed');
+		$(this).parent().addClass('changed');
+		var src = $(this).attr('src');
+		i = $(this).attr('data-num');
+		largeImg.fadeOut(100, function(){
+			largeImg.attr('src', src)
+		});
+		largeImg.fadeIn(100);
+		
+
+	});
+});
+
+
+
+
+/*   табы  */
+
+$(function(){
+	var ul = $('.tabs_block').find('.tabs_ul');
+	var li = ul.find('li');
+	var link = li.find('a');
+	var index;
+	var tabContent = $('.tabs_content');
+	var tab = tabContent.find('.tab');
+
+
+	link.click(function(){
+		li.not($(this).parent()).removeClass('active');
+		$(this).parent('li').addClass('active');
+
+		index = $(this).parent('li').index();
+		tab.removeClass('showed');
+		tabContent.find('.tab:eq(' + index + ')').addClass('showed');
+		return false;
+
+	})
+});
+
+
+/*   Модальное окно  */
+
+$(function(){
+	var linkCall = $('a.callback');
+	var linkConf = $('a.conf');
+	var modalCall = $('.modal.callback');
+	var modalConf = $('.modal.conf');
+	var overlay = $('.overlay');
+	var close = $('.modal_close');
+
+	linkCall.click(function(){
+		overlay.fadeIn();
+		modalCall.fadeIn();
+		return false;
+	})
+
+	linkConf.click(function(){
+		overlay.fadeIn();
+		modalConf.fadeIn();
+		return false;
+	})
+
+
+
+	overlay.click(function(){
+		$('.modal').fadeOut();
+	})
+	close.click(function(){
+		overlay.fadeOut();
+		$('.modal').fadeOut();
+	})
+
+});
+
+
+/*  Инициализация маски */
+jQuery(function($){
+$("#phone").mask("+7(999) 999-9999");
+});
+
+/*  Инициализация скролла */
+jQuery(document).ready(function(){
+    jQuery('.scrollbar-rail').scrollbar();
+});

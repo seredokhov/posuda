@@ -15,15 +15,13 @@
 
 	<!-- Jquery UI-->
 	<link rel="stylesheet" href="css/jquery-ui.css">
-	
+
 	<!-- Owl -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.transitions.css">
-	
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i">
-	
+
+	<!-- Иконочные шрифты-->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/styles.css">
 
@@ -59,7 +57,7 @@
 					</div>
 					<div class="cart_block">
 						<div class="phone_num">
-							<a href="#" class="call">+7 (495) 642 23 73</a>
+							<a href="tel:+74956422373" class="call">+7 (495) 642 23 73</a>
 							<a href="#" class="callback">Заказать обратный звонок</a>
 						</div>
 						<a href="#" class="cart">
@@ -73,6 +71,7 @@
 		<div class="container-fluid">
 			<nav class="container">
 				<a href="#" class="logo_small visible-sm visible-xs"></a>
+				<a href="tel:+74956422373" class="mob_call visible-sm visible-xs">+7 (495) 642 23 73</a>
 				<ul class="header_nav row">
 					<!--  Пункт меню видимый на маленьких экранах (кнопка закрыть меню) -->
 					<li class="visible-sm visible-xs" >
@@ -377,7 +376,7 @@
 				</div>
 				<div class="col-lg-4 col-sm-7">
 					<div class="phone_num">
-						<a href="#" class="call">+7 (495) 642 23 73</a>
+						<a href="tel:+74956422373" class="call">+7 (495) 642 23 73</a>
 						<a href="#" class="callback">Заказать обратный звонок</a>
 					</div>
 					<div class="adress">Москва, 3-й Крутицкий переулок 	дом 11 (ст. м. Пролетарская)</div>
@@ -393,21 +392,49 @@
 	<div class="overlay"></div>
 
 
+	<!-- Модальные окна -->
+	<div class="modal callback">
+		<form action="#">
+			<div class="input_group">
+				<label for="name">Ваше имя:</label>
+				<input type="text" id="name" placeholder="Введите Ваше Имя">
+			</div>
+			<div class="input_group">
+				<label for="phone">Номер телефона:</label>
+				<input type="text" id="phone" placeholder="+7(___) ___-____">
+			</div>
+			<div class="btn_block">
+				<input type="submit" class="order_btn" value="Заказать">
+			</div>
+			<div class="chekbox_block">
+				<label>
+					<input class="checkbox" type="checkbox" name="checkbox-test">
+					<span class="checkbox-custom"></span>
+					<span class="label">Нажимая на кнопку "Заказать" - я даю свое согласие на обработку моих <a href="#">персональных данных</a>.</span>
+				</label>
+			</div>
+		</form>
+		<button class="modal_close"></button>
+	</div>
+	<div class="modal conf">
+		<div class="scrollbar-rail">
+			<p>
+				Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+			</p>
+		</div>
+		<button class="modal_close"></button>
+	</div>
 
 
-	<!-- Комментарий для следующих блоков
-	================================================== -->
-	
 
 
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- Скрипты -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
 	<script src="js/main.js"></script>
-	
+
 </body>
 </html>
