@@ -528,4 +528,9 @@ ul.cat_list > li{float:none;width:100%}
 		float: none;
 		width: auto;
 	}
+	footer a.logo_small {
+		width: 120px;
+		height: 120px;
+		background-size: contain;
+	}
 }
