@@ -323,3 +323,22 @@ $("#phone").mask("+7(999) 999-9999");
 jQuery(document).ready(function(){
     jQuery('.scrollbar-rail').scrollbar();
 });
+
+
+/* Валидация формы*/
+/*
+$(function(){
+	var orderBtn = $('.order_btn');
+	var name = $('#name');
+	var phone = $('#phone');
+
+
+	orderBtn.click(function(){
+
+		if (name.val().length > 2) {
+			alert('Клик!');
+		}
+
+	})
+});
+*/

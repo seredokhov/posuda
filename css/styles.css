@@ -426,3 +426,55 @@ ul.cat_list > li{float:none;width:100%}
 .previews_block button{top:190%}
 .modal{padding:70px 20px 40px}
 }
+
+
+@media (min-width: 1300px) {
+	.container {
+		width: 100% !important;
+	}
+	.white_block .label_delivery,
+	.white_block .label_goods {
+		float: none;
+	}
+
+	#owl-demo .item img {
+		display: block;
+		margin: 0 auto;
+		width: auto;
+		max-width: 100%;
+		max-height: 400px !important;
+	}
+	.baner img {
+		width: auto;
+		max-width: 100%;
+		max-height: 360px;
+		display: block;
+		margin: 0 auto;
+	}
+	.customNavigation a.prev,
+	.customNavigation a.next {
+		transform: translate(0,-50%);
+	}
+	.cat_block ul {
+		text-align: center;
+	}
+	.cat_block ul li {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.filter_block > .container {
+		display: block;
+		text-align: center;
+	}
+	.filter_block .range,
+	.filter_block .select {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.item_block .item_1,
+	.item_block .item_2 {
+		width: 20%;
+	}
+}
