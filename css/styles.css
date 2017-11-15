@@ -471,7 +471,7 @@ ul.cat_list > li{float:none;width:100%}
 	.filter_block .select {
 		float: none;
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: top;
 	}
 	.item_block .item_1,
 	.item_block .item_2 {
