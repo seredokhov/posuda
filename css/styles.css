@@ -486,4 +486,7 @@ ul.cat_list > li{float:none;width:100%}
 	.h1_block h1 {
 		padding-left: 10%;
 	}
+	header .cart_block {
+		margin-right: 10px;
+	}
 }
