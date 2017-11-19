@@ -20,7 +20,7 @@ $(function(){
 
 			owl_items.owlCarousel({
 			items : 5,
-			itemsDesktop : [1400,4], 
+			itemsDesktop : [1500,4], 
 			itemsDesktopSmall : [1200,4], 
 			itemsTablet: [990,2], 
 			itemsMobile : [500,1] 
