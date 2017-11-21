@@ -19,11 +19,11 @@ $(function(){
 		var prev = $('.customNavigation').find('.prev');
 
 			owl_items.owlCarousel({
-			items : 5,
-			itemsDesktop : [1500,4], 
-			itemsDesktopSmall : [1200,4], 
-			itemsTablet: [990,2], 
-			itemsMobile : [500,1] 
+			items : 4, 
+			itemsDesktop : [1200,2], 
+			itemsDesktopSmall : [900,2], 
+			itemsTablet: [600,1], 
+			itemsMobile : false 
 		});
 		next.click(function(){
 			owl_items.trigger('owl.next');
@@ -322,45 +322,4 @@ $("#phone").mask("+7(999) 999-9999");
 /*  Инициализация скролла */
 jQuery(document).ready(function(){
     jQuery('.scrollbar-rail').scrollbar();
-});
-
-
-/* Валидация формы*/
-
-$(function(){
-	var orderBtn = $('.order_btn');
-	var form = orderBtn.parent().parent();
-	var name = $('#name');
-	var phone = $('#phone');
-	var re = /\+7\(\d\d\d\) \d\d\d-\d\d\d\d/;
-	var boll = true;
-
-	orderBtn.click(function(){
-
-		if (name.val().length < 3) {
-			boll = false;
-			name.addClass('error');
-		}
-		else {
-			name.removeClass('error');
-			boll = true;
-		}
-		
-		if ( !re.test(phone.val()) ) {
-			boll = false;
-			phone.addClass('error');
-		}
-		else {
-			phone.removeClass('error');
-			boll = true;
-		}
-		if (boll == true) {
-			form.submit();
-		}
-		else {
-			return false;
-		}
-	})
-
-
 });
